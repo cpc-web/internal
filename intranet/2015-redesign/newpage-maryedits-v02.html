@@ -1,0 +1,460 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<link href="http://cloud.webtype.com/css/2ebe6d20-6380-420e-a3c8-7a19f4a641e2.css" rel="stylesheet" type="text/css" />
+<link href="http://www.centralparknyc.org/assets/css/bootstrap-303-min.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<style>
+body {
+ font-family: 'Titling Gothic FB Narr', sans-serif;
+   -webkit-font-smoothing: antialiased;
+font-size: 18px;
+padding-bottom:0;
+outline : none; 
+background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+line-height: 1.1;
+font-weight: 700;
+}
+
+a, a:link, a:visited {
+text-decoration: none;
+color:#609933;  /*green*/
+padding-bottom:0;
+-webkit-font-smoothing: antialiased;
+}
+
+a:hover {
+text-decoration: none;
+
+color:#44781d;  
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-o-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}
+
+header {
+/*background: url('cpc-fall-header.jpg') no-repeat center center;  */
+height: 100px;
+background-color: #f7f7f7;
+}
+
+
+header .middle-header {
+font-size: 60px;
+font-weight: 700;
+font-family: 'Titling Gothic FB Cond', sans-serif;
+color: #68b247;
+text-align: center;
+text-shadow: 1px 1px 1px #666;
+letter-spacing: 3px;
+margin-top: 10px;
+}
+
+.logo {
+margin-left: -15px;  
+float: left;
+}
+
+.etime-link {
+color:#609933;
+font-size:12px;
+text-align: center;
+height: auto;
+border-top: 2px solid white;
+}
+
+.etime-link:hover {
+border-top: 2px solid #6bbf55;  
+}
+
+.email-link {
+color:#609933;
+font-size:12px;
+text-align: center;
+border-top: 2px solid white;
+margin-right: -8px;
+}
+
+.email-link:hover {
+border-top: 2px solid #6bbf55;  
+}
+
+.fa-clock-o {
+font-size: 30px;
+color: #68b247; 
+margin-top: 15px; 
+}
+
+.fa-envelope {
+font-size: 30px;
+color: #68b247; 
+margin-top: 15px; 
+
+}
+
+.logo-row li {
+display: inline-block;
+list-style: none;
+padding: 0 15px;
+}
+
+.logo-row ul {
+display: inline;
+float: right;
+}
+
+.sub-header {
+color: #636466;
+font-size: 24px;
+text-align: center;  
+margin-top: 20px;
+}
+
+.fa-caret-down {
+display: none;  
+}
+
+.myClick {
+cursor: pointer;  
+}
+
+.myClose {
+font-size: 12px;
+text-decoration: underline;  
+cursor: pointer;  
+margin-top: 10px;
+}
+
+.main-col {
+margin-left: 20px;  
+}
+
+.about-cpc {
+display: none;
+}
+
+.forms-and-guidelines {
+display: none;  
+}
+
+.forms-for-managers {
+display: none;  
+}
+
+.employee-benefits {
+display: none;  
+}
+
+.ehs {
+display: none;  
+}
+
+.professional-development {
+display: none;  
+}
+
+.it-links {
+display: none;  
+}
+
+.top-image {
+margin: 0 auto;
+margin-top: 30px;  
+}
+
+footer {
+background-color: #68b247;
+height: 100px;
+margin-top: 50px;  
+display: none;
+}
+
+.announcements {
+margin-top: 10px;  
+}
+
+.myClick {
+margin-top: 20px;  
+}
+
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="row logo-row">
+      <div class="col-xs-12">
+        <img src="http://cpc.convio.net/redesign/img/cpc/35logo-74h.jpg" class="logo" />
+        <ul>
+          <li class="etime-link"><a href="http://adp-etime.e-cpc.centralparknyc.org/1/applications/wtk/html/ess/logon.jsp" target="_blank"><i class="fa fa-clock-o"></i><br/>e-time</a></li>
+          <li class="email-link"><a href="https://portal.microsoftonline.com/" target="_blank"><i class="fa fa-envelope"></i><br/>web email</a></li>
+        </ul>
+      </div>
+    </div>   
+    <header>
+      <div class="row">
+        <div class="col-xs-12 middle-header">
+          Central to the Staff
+        </div>
+      </div>  
+    </header>
+    <div class="row">
+      <div class="col-xs-12"> <!-- open column featuring image -->
+        <img src="picture.jpg" class="img-responsive top-image"/>
+      </div> <!-- close column featuring image -->
+      <div class="col-xs-12 sub-header">
+        <p>Your resource place for information, links, and forms</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 main-col"> <!-- open column of toggleable links -->
+        <div><!-- open ABOUT CPC -->
+          <span class="myClick" id="about-cpc">
+            <i class="fa fa-caret-right" style="margin-right: 4px;"></i>
+            <i class="fa fa-caret-down"></i>
+            &nbsp;About Central Park Conservancy
+          </span>
+          <ul class="about-cpc">
+            <li><a href="hr/2015%20Payroll%20Calendar.pdf">2015 Payroll Calendar</a></li>
+            <li><a href="hr/Central%20Park%20A%20to%20Z.pdf.pdf">Central Park A to Z</a></li>
+            <li><a href="Communication%20Toolbox.html">Communication Toolbox</a></li>
+            <li><a href="http://www.centralparknyc.org/">CPC Website</a></li>
+            <li><a href="http://www.youtube.com/user/CentralParkChannel?feature=mhum#p/u">CPC YouTube Channel</a></li>
+            <li><a href="hr/Employee%20Handbook.pdf">Employee Handbook</a></li>
+            <ul>
+              <li><a href="hr/Document%20Retention%20and%20Destruction%20Policy.htm">Document Retention and Destruction Policy</a></li>
+            </ul>
+            <ul>    
+              <li><a href="hr/ConflictofInterestWhistblowerEthicsPolicy.htm">Conflict of Interest, Whistleblower, and Ethics Policy</a></li>
+            </ul>  
+            <li><a href="http://www.nyc.gov/html/oem/downloads/pdf/hurricane_brochure_english.pdf">Ready New York Hurricane Guide</a></li>
+            <li><a href="hr/JobPosting.htm">Internal Job Postings</a></li>
+            <li><a href="hr/NewStaff.pdf">New Hires and Promotions</a></li>
+            <li><a href="hr/OrgChart.pdf">Organizational Chart</a></li>
+            <li><a href="hr/CPC_at_a_GLANCE.pdf">Official CPC Fact Sheet</a></li>
+            <li><a href="hr/staff_anniversaries.pdf">Staff Anniversaries&nbsp;This Month</a></li>
+            <li><a href="hr/StaffBirthdays.pdf">Staff Birthdays This Month</a></li>
+            <p class="myClose clickable" data-rel-id="about-cpc">
+              Close 
+            </p>
+          </ul>
+        </div><!-- close ABOUT CPC -->
+
+        <div><!-- open FORMS AND GUIDELINES -->
+          <span class="myClick" id="forms-and-guidelines">
+            <i class="fa fa-caret-right" style="margin-right: 4px;"></i>
+            <i class="fa fa-caret-down"></i>
+            CPC Forms and Guidelines
+          </span>
+          <ul class="forms-and-guidelines">
+            <li><a href="Bid%20Sheet%20Form.pdf">Bid Sheet Form</a></li>
+            <li><a href="BidWaiver-PurchasesOver$10000-Dec2013.pdf">Bid Waiver Form</a></li>
+            <li><a href="TaxExemptCertificate.pdf">CPC Tax Exempt Certificate</a></li>
+            <li><a href="hr/Dana_Center.pdf">Dana Center Reservation Guidelines</a></li>
+            <li><a href="hr/DirectDepositForm.pdf">Direct Deposit Authorization Form</a></li>
+            <li><a href="hr/VolunteerPolicy.pdf">Employee Compensation for Volunteering for Events</a></li>
+            <li><a href="hr/EmployeeReferralForm.pdf">Employeen Referral Form</a></li>
+            <li><a href="http://support.centralparknyc.org/site/PageNavigator/internal_special_events_form">Event Request Form</a></li>
+            <li><a href="hr/ExpReimburseform.xlsx">Expense Reimburse Form</a></li>
+            <li><a href="ContractorAgreement2015.pdf">Independent Contractor Blank Agreement/contract</a></li>
+            <li><a href="hr/Identifying%20an%20Independent%20Contractor.htm">Independent Contractor Identification and Criteria</a></li>
+            <li><a href="hr/InternalEmployeeCandidateInterviewForm.pdf">Internal Employee Candidate Interview Form</a></li>
+            <li><a href="Vendor%20Request%20Form%20Blank%20new%20logo%202011.pdf">New Vendor Request Form</a></li>
+            <li><a href="hr/NMRC_res.pdf">NMRC Reservation Guidelines</a></li>
+            <li><a href="hr/PersonnelChangeRequest.pdf">Personnel Change Request Form</a></li>
+            <li><a href="Photography%20Guidelines.pdf">Photography Guidelines for CPC Images</a></li>
+            <p class="myClose clickable" data-rel-id="forms-and-guidelines">
+                  Close 
+                </p>
+          </ul> 
+        </div><!-- close FORM AND GUIDELINES -->
+        <div><!-- open FORMS FOR MANAGERS -->
+          <span class="myClick" id="forms-for-managers">
+            <i class="fa fa-caret-right" style="margin-right: 4px;"></i>
+            <i class="fa fa-caret-down"></i>
+            CPC Forms for Managers
+          </span>  
+          <ul class="forms-for-managers">
+            <li><a href="hr/ThreeMonthPA.docx">90 Day Performance Appraisal &amp; Onboarding Passport Checklist</a></li>
+            <li><a href="hr/90%20Day%20Performance%20Appraisal%20-%20Promoted%20Employee.docx">90 Day Performance Appraisal for Recently Promoted Employee</a></li>
+            <li><a href="hr/Job%20Application%20with%20Inserts.pdf">Employment Application</a></li>
+            <li><a href="hr/Sterling%20Form_Jan2013.pdf">Sterling Form only</a></li>
+            <li><a href="hr/Sample%20JD%20Format.doc">Job Description Template</a></li>
+            <li><a href="hr/Temp%20Employee%20Confidentiality%20Acknowledgement.doc">Temporary Employee Confidentiality Acknowledgment</a></li>
+            <li><a href="hr/Volunteer%20Confidentiality%20Acknowledgement.doc">Volunteer Confidentiality Acknowledgment</a></li>
+            <li>Worker's Comp.&nbsp;</li>
+              <ul><li><a href="hr/c2.pdf">C-2 Form</a></li></ul>
+              <ul><li><a href="hr/WC%20Package.pdf">Claimant Package</a></li></ul>
+              <ul><li><a href="hr/Worker%27s%20Compensation%20Pharamacy%20Benefits.pdf">Pharmacy Benefits</a></li></ul>
+              <ul><li><a href="hr/CityMDLocations.pdf">City MD Locations</a></li></ul>
+              <p class="myClose clickable" data-rel-id="forms-for-managers">
+                Close 
+              </p>
+          </ul>
+        </div><!-- close FORMS FOR MANAGERS -->  
+        <div><!-- open EMPLOYEE BENEFITS -->
+          <span class="myClick" id="employee-benefits">
+            <i class="fa fa-caret-right" style="margin-right: 4px;"></i>
+            <i class="fa fa-caret-down"></i>
+            Employee Benefits
+          </span>  
+          <ul class="employee-benefits">
+            <li>Annual 403(b) Notifications</li>
+              <ul><li><a href="hr/2015%20Contribution%20Limit%20Flier.pdf">2015 Plan Year Contribution Limits</a></li></ul>
+              <ul><li><a href="hr/VALIC%20-%20Annual%20Part%20%20Fee%20Disclosure.pdf">Annual Participant Fee Disclosure</a></li></ul>
+              <ul><li><a href="hr/CPC%20-%202013%20Plan%20Year%20SAR.pdf">CPC &ndash; 2013 Plan Year SAR</a></li></ul>
+              <ul><li><a href="hr/CSXAX%20Fund%20Fact%20Sheet.pdf">CSXAX Fund Fact Sheet</a></li></ul>
+              <ul><li><a href="hr/ONIAX%20Fund%20Fact%20Sheet.pdf">ONIAX Fund Fact Sheet</a></li></ul>
+              <ul><li><a href="hr/CPC%20-%20Participant%20Fund%20Change%20Letter_2015.doc">VALIC 403(b)&nbsp;Participant Fund Change Letter</a></li></ul>
+              <ul><li><a href="hr/CPC%20-%20Annual%20QDIA%20Notice%20for%202015.pdf">VALIC 403(b) Qualified Default Investment Alternative Annual Notice</a></li></ul>
+              <ul><li><a href="hr/CPC%20-%20Universal%20Availability%20Notification.pdf">VALIC 403(b) Universal Availability Annual Notice</a></li></ul>
+            <li><a href="BenefitsPlanOverviews.html">CPC Benefits Plan Overviews</a></li>
+              <ul><li><a href="hr/Aetna%20Medical%20Enrollment.pdf">Aetna Medical Enrollment/Change Form</a></li></ul>
+              <ul><li><a href="hr/Aetna%20Dental%20Enrollment.pdf">Aetna Dental Enrollment/Change Form</a></li></ul>
+            <li><a href="hr/HGNewsletter_Central%20Park.pdf">EAP Healthy Guidance Newsletter</a></li>
+            <li><a href="http://www.youdecide.com/gbs/CPARKC">Employee Advantage</a> (Company ID: CPARKC)</li>
+            <li><a href="http://www.nymcu.org/">Municipal Credit Union</a></li>
+            <li><a href="hr/PaidSickLeave.pdf">Paid Sick Leave</a></li>
+            <li><a href="hr/PregnancyEmploymentRights.pdf">Pregnancy&amp; Employment Rights</a></li>
+            <li><a href="hr/Plum%20Benefits.htm">Plum Benefits - July Guide</a></li>
+            <li><a href="http://tams.transitchek.com/">TransitChek</a> (Company Code: RHV40</li>
+            <li><a href="http://www.verizonwireless.com/discount/">Verizon Wireless discount</a></li>
+            <li><a href="http://www.valic.com/AIG-Retirement_82_8630.html">VALIC Retirement Program</a></li>
+            <li><a href="https://www.workingadvantage.com/">Working Advantage</a> (CPC member ID: 99042046)</li>
+            <p class="myClose clickable" data-rel-id="employee-benefits">
+              Close 
+            </p>
+          </ul>  
+        </div><!-- close EMPLOYEE BENEFITS -->
+        <div><!-- begin EH&S -->       
+          <span class="myClick" id="ehs">
+            <i class="fa fa-caret-right" style="margin-right: 4px;"></i>
+            <i class="fa fa-caret-down"></i>
+              Environmental Health &amp; Safety (EH&amp;S)
+          </span>  
+          <ul class="ehs">
+            <li><a href="Safety/How%20to%20find%20a%20Safety%20Data%20Sheet%20on%20CPC%20Intranet.pdf">CPC Chemical Inventory &amp; Safety Data Sheets</a></li>
+            <li><a href="EH&amp;S%20Overview%202015.pdf">EH&amp;S Overview</a></li>
+            <li><a href="Health%20and%20Safety%20Committee%202015.pdf">CPC Health and Safety Committee</a> </li>
+            <li><a href="EHS_002%20Utility%20vehicles%20use%20safety%20program%202012.pdf">EHS_002 Utility Vehicle Use Safety</a></li>
+            <li><a href="EHS_003%20Spill%20Resposnse%20Plan.pdf">EHS_003 Spill Response Plan</a></li>
+            <li><a  href="EHS_004%20Bloodborne%20pathogens%202015.pdf">EHS_004 Bloodborne Pathogens Program</a></li>
+            <li><a href="EHS_006%20Hazard%20Communication%20Program.09.pdf">EHS_006 Hazard Communication Program</a></li>
+            <li><a href="EHS_007%20Personal%20Protective%20Equipment%202015.06.pdf">EHS_007 Personal Protective Equipment Program</a></li>
+            <li><a href="EHS_009%20Bicycle%20use%20by%20CPC%20employees%20program%202015.pdf">EHS_009 Bicycle Use by CPC Employees</a></li>
+            <li><a href="EHS_007_PPE_requirements.pdf">PPE: Minimum Requirements</a ></li>
+            <li><a href="EHS_007%20Personal%20Protective%20Equipment%202015_TABLE.pdf">PPE: Minimum Requirements</a></li>
+            <li><a href="Safety%20bulletin%20no.%202012-1%20Utility%20vehicles%20safety%20REV%20Nov%202014.pdf">Safety bulletin no. 2012-1: Utility Vehicles Safety</a></li>
+            <li><a href="Safety%20bulletin%20no.%202013-1%20Driving%20Safely%20in%20Central%20Park%202015.pdf">Safety bulletin no. 2013-1: Driving Safely in Central Park</a></li>
+            <li><a href="Safety%20bulletin%20no.%202013-2%20Traffic%20Control%20Procedure%20for%20Work%20on%20Drives%202015.pdf">Safety bulletin no. 2013-2: Traffic Control Procedure for Work on Drives</a></li>
+            <li><a href="Safety%20bulletin%20no.%202013-4%20Traffic%20Control%20Flagperson%20Safety.pdf">Safety bulletin no. 2013-4: Traffic Control Flagperson Safety</a></li>
+            <li><a href="Safety%20bulletin%20no.%202013-5%20Snow%20Plow%20Safety%20rev%20Jan%202015.pdf">Safety bulletin no. 2013-5 Snow Plow Safety</a></li>
+            <li><a href="Safety%20bulletin%20no%20%202015-1%20Procedure%20for%20Work%20on%20Transverse%20Road%20Sidewalks%20without%20Closure.pdf">Safety bulletin no 2015-1 Procedure for Work on Transverse Road Sidewalks </li>without Closure</a>
+            <li><a href="Safety%20bulletin%20no%20%202015-2%20Procedure%20for%20Sidewalk%20Work%20with%20Closure.pdf">Safety bulletin no 2015-2 Procedure for Sidewalk Work with Closure</a></li>
+            <li><a href="CPC%20Spill%20Response%20Report%20Form%202015.pdf">CPC Spill Response Report Form</a></li>
+            <p class="myClose clickable" data-rel-id="ehs">
+              Close 
+            </p>
+          </ul>
+        </div><!-- close EH&S --> 
+        <div><!-- begin STAFF TRAINING -->       
+          <span class="myClick" id="professional-development">
+            <i class="fa fa-caret-right" style="margin-right: 4px;"></i>
+            <i class="fa fa-caret-down"></i>
+              Staff Training and Professional Development
+          </span>  
+          <ul class="professional-development">
+            <li><a href="hr/StaffLearningOpportunities2015.html">2015 Staff Learning Opportunities</a></li>
+            
+            <p class="myClose clickable" data-rel-id="professional-development">
+              Close 
+            </p>
+          </ul>
+        </div><!-- close STAFF TRAINING --> 
+        <div><!-- begin IT Links -->       
+          <span class="myClick" id="it-links">
+            <i class="fa fa-caret-right" style="margin-right: 4px;"></i>
+            <i class="fa fa-caret-down"></i>
+              CPC IT Systems Links
+          </span>  
+          <ul class="it-links">
+            <li><a href="http://192.168.20.7/confidential.htm">Confidential Reporting Form</a>&nbsp;</li>
+            <li><a href="http://adp-etime.e-cpc.centralparknyc.org/1/applications/wtk/html/ess/logon.jsp">Enterprise eTime</a></li>
+            <li><a href="http://192.168.200.125/epicorhcm">Epicor HCM</a></li>
+            <li><a href="hr/ESS%20Guide.pdf">Employee Self-Service FAQs</a></li>
+            <li><a href="http://it-help/portal">HelpDesk</a></li>
+            <li><a href="https://ipay.adp.com/">iPay ADP Pay Statements</a></li>
+            <li><a target="_blank" href="hr/iPay%20Registration%20Instructions.pdf">iPay Registration Instructions</a></li>
+            <li><a href="https://portal.microsoftonline.com/">Outlook Web Portal</a></li>
+            <li><a href="https://centralparknyc.officespacesoftware.com/vd/vd.jsp?dir=all">OfficeSpace-&nbsp;Staff Visual Directory</a></li>
+            <li><a href="http://procurementapp/workplace/Central/Login.aspx">WorkPlace</a></li>
+            <p class="myClose clickable" data-rel-id="it-links">
+              Close 
+            </p>
+          </ul>
+        </div><!-- close IT Links --> 
+        <div class="announcements"><!-- open ANNOUNCEMENTS -->
+          <div>
+            <p><b>Announcements:</b></p>
+        
+            Annual 403(b) Notifications&nbsp;
+          </span>  
+          <ul>
+            <li><a href="hr/hr/2015%20Contribution%20Limit%20Flier.pdf">2015 Plan Year Contribution Limits</a></li>
+            <li><a href="hr/hr/VALIC%20-%20Annual%20Part%20%20Fee%20Disclosure.pdf">Annual Participant Fee Disclosure</a></li>
+            <li><a href="hr/hr/CPC%20-%202013%20Plan%20Year%20SAR.pdf">CPC &ndash; 2013 Plan Year SAR</a></li>
+            <li><a href="hr/hr/CSXAX%20Fund%20Fact%20Sheet.pdf">CSXAX Fund Fact Sheet</a></li>
+            <li><a href="hr/hr/ONIAX%20Fund%20Fact%20Sheet.pdf">ONIAX Fund Fact Sheet</a></li>
+            <li><a href="hr/hr/CPC%20-%20Participant%20Fund%20Change%20Letter_2015.doc">VALIC 403(b)&nbsp;Participant Fund Change Letter</a></li>
+            <li><a href="hr/hr/CPC%20-%20Annual%20QDIA%20Notice%20for%202015.pdf">VALIC 403(b) Qualified Default Investment Alternative Annual Notice</a></li>
+            <li><a href="hr/hr/CPC%20-%20Universal%20Availability%20Notification.pdf">VALIC 403(b) Universal Availability Annual Notice</a></li>
+          </ul>    
+        </div><!-- close ANNOUNCEMENTS -->
+      </div> <!-- close column of toggleable links -->
+    </div>  
+    <footer></footer>
+  </div> <!-- close container -->
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+(function($){
+   var ready = function() { 
+      var clickHandler = function(e) {
+        var myId = ($(this).attr('id'));
+        var myInfo = "." + myId;
+        console.log(myId);
+        $(myInfo).fadeToggle('600');
+        $(this).children('.fa').toggle();
+      };
+
+      var closeHandler = function(e) {
+         var myRelId = $(this).attr('data-rel-id');
+         $('#' + myRelId).click();
+      };
+      
+      $( '.myClick' ).click(clickHandler);
+      $( '.myClose' ).click(closeHandler);
+   };
+  $(ready);
+})(jQuery);
+
+</script>
+</html>
